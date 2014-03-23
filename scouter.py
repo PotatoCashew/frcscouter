@@ -183,7 +183,7 @@ try:
     try:
         os.remove(filename)
     except OSError:
-        raise
+        pass
     workbook.save(filename)
 except:
     print("No file specified")
